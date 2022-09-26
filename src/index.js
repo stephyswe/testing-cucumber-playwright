@@ -107,11 +107,11 @@ class App extends React.Component {
             <Container>
                 <div className="playground-link">
                 <a
-                  className="testing-talks-logo"
-                  href="/"
-                >
-                </a>
-              </div>
+                    data-id="header-logo"
+                    className="testing-talks-logo"
+                    href="/"
+                ></a>
+                </div>
               <div className="playground-link">
                   <a
                       className="ContactItemPlayground"
