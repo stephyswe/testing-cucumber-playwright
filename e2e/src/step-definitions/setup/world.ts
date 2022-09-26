@@ -1,4 +1,4 @@
-import playwright, {chromium, webkit, firefox, BrowserContextOptions, Page, Browser, BrowserContext, BrowserType} from "@playwright/test";
+import {chromium, webkit, firefox, BrowserContextOptions, Page, Browser, BrowserContext} from "@playwright/test";
 import {World, setWorldConstructor, IWorldOptions} from "@cucumber/cucumber";
 import {env} from '../../env/parseEnv'
 
@@ -32,12 +32,16 @@ export class ScenarioWorld extends World {
     private newBrowser = async (): Promise<Browser> => {
         const automationBrowsers = ['chromium', 'firefox', 'webkit']
         type AutomationBrowser = typeof automationBrowsers[number]
-        const automationBrowser: any = env('UI_AUTOMATION_BROWSER') as AutomationBrowser
-        const browser = chromium.launch({
+        const automationBrowser = env('UI_AUTOMATION_BROWSER') as AutomationBrowser
+        let browserType = chromium
+        const browserOptions = {
             headless: process.env.HEADLESS !== 'false',
             args: ['--disable-web-security', '--disable-features=IsolateOrigins, site-per-process']
-        })
-        return browser
+        }
+        if (automationBrowser === 'chromium') browserType = chromium
+        if (automationBrowser === 'firefox') browserType = firefox
+        if (automationBrowser === 'webkit') browserType = webkit
+        return browserType.launch(browserOptions)
     }
 }
 

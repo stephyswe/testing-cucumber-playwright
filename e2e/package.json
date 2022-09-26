@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cucumber:dev": "cucumber-js src/features/**/*.feature --publish-quiet --tags @dev --require-module ts-node/register --require src/step-definitions/**/**/*.ts",
-    "cucumber:smoke": "cucumber-js src/features/**/*.feature --tags @smoke --require-module ts-node/register --require src/step-definitions/**/**/*.ts",
-    "cucumber:regression": "cucumber-js src/features/**/*.feature --tags @regression --require-module ts-node/register --require src/step-definitions/**/**/*.ts"
+    "transpile": "rimraf dist && babel --extensions .ts --out-dir dist src",
+    "cucumber": "yarn transpile && cucumber-js"
   },
   "author": "Stephanie",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/preset-env": "^7.19.1",
+    "@babel/preset-typescript": "^7.18.6",
     "@cucumber/cucumber": "^8.6.0",
     "@playwright/test": "^1.26.0",
     "playwright": "^1.26.0",
