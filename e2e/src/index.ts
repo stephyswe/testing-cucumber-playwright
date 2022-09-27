@@ -1,3 +1,10 @@
+import dotenv from 'dotenv'
+import {env} from './env/parseEnv'
+
+dotenv.config({
+    path: env("COMMON_CONFIG_FILE")
+})
+
 const common = `./src/features/**/*.feature \
                  --publish-quiet \
                  --require-module ts-node/register \
