@@ -19,11 +19,11 @@ Feature: As a user I expect to be able to create contacts
 
     # Contains
     And the "full name label" should contain the text "Name:"
-    And the "name" should contain the text "Ted Smith"
+    And the "name" should equal the text "Ted Smith"
     And the "gender label" should contain the text "Gender:"
-    And the "gender" should contain the text "Male"
+    And the "gender" should equal the text "Male"
     And the "address label" should contain the text "Address:"
-    And the "address" should contain the text "123 Test Street"
+    And the "address" should equal the text "123 Test Street, Test City"
 
     # Buttons
     And the "edit" should be displayed

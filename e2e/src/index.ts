@@ -22,7 +22,6 @@ const worldParameters: GlobalConfig = {
 }
 
 const common = `./src/features/**/*.feature \
-                 --publish-quiet \
                  --require-module ts-node/register \
                  --require ./src/step-definitions/**/**/*.ts \
                  -f json:./reports/report.json \

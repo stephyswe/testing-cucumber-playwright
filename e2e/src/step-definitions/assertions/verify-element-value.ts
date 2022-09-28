@@ -17,3 +17,17 @@ Then(
         })
     }
 )
+
+Then(
+    /^the "([^"]*)" should equal the text "(.*)"$/,
+    async function(this: ScenarioWorld, elementKey: ElementKey, expectedElementText: string) {
+        const {screen: {page}, globalConfig} = this
+
+        console.log(`the ${elementKey} should equal the text ${expectedElementText}`)
+        const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
+        await waitFor(async () => {
+            const elementText = await page.textContent(elementIdentifier)
+            return (elementText === expectedElementText)
+        })
+    }
+)

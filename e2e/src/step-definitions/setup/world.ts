@@ -39,6 +39,7 @@ export class ScenarioWorld extends World {
         const automationBrowser = env('UI_AUTOMATION_BROWSER') as AutomationBrowser
         let browserType = chromium
         const browserOptions = {
+            devtools: process.env.DEVTOOLS !== 'false',
             headless: process.env.HEADLESS !== 'false',
             args: ['--disable-web-security', '--disable-features=IsolateOrigins, site-per-process']
         }
