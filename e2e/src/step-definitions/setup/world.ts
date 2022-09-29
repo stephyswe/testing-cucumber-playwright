@@ -1,7 +1,7 @@
 import {chromium, webkit, firefox, BrowserContextOptions, Page, Browser, BrowserContext} from "@playwright/test";
 import {World, setWorldConstructor, IWorldOptions} from "@cucumber/cucumber";
 import {env} from '../../env/parseEnv'
-import {GlobalConfig} from "../../env/global";
+import {GlobalConfig, GlobalVariables} from "../../env/global";
 
 export type Screen = {
     browser: Browser;
@@ -13,16 +13,18 @@ export class ScenarioWorld extends World {
     constructor(options: IWorldOptions) {
         super(options)
 
-        this.globalConfig = options.parameters as GlobalConfig
+        this.globalConfig = options.parameters as GlobalConfig;
+        this.globalVariables = {};
     }
 
-    globalConfig: GlobalConfig
+    globalConfig: GlobalConfig;
+    globalVariables: GlobalVariables;
     screen!: Screen;
 
     async init(contextOptions?: BrowserContextOptions): Promise<Screen> {
-        await this.screen?.page.close()
-        await this.screen?.context.close()
-        await this.screen?.browser.close()
+        await this.screen?.page?.close();
+        await this.screen?.context?.close()
+        await this.screen?.browser?.close()
 
         const browser = await this.newBrowser();
         const context = await browser.newContext(contextOptions)

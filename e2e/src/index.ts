@@ -26,7 +26,9 @@ const common = `./src/features/**/*.feature \
                  --require ./src/step-definitions/**/**/*.ts \
                  -f json:./reports/report.json \
                  --world-parameters ${JSON.stringify(worldParameters)} \
-                 --format progress-bar`
+                 --format progress-bar \
+                 --parallel ${env('PARALLEL')} \
+                 --retry ${env('RETRY')}`;
 
 const dev = `${common} --tags '@dev'`
 const smoke = `${common} --tags '@smoke'`

@@ -23,7 +23,7 @@ Then(
 
 Then(
     /^I select the "([^"]*)" option from the "([^"]*)"$/,
-    async function(this: ScenarioWorld, option: ElementKey, elementKey: ElementKey) {
+    async function(this: ScenarioWorld, option: string, elementKey: ElementKey) {
         const {screen: {page}, globalConfig} = this;
 
         console.log(`I select the ${option} option from the ${elementKey}`)
