@@ -39,7 +39,7 @@ export class ScenarioWorld extends World {
         const automationBrowsers = ['chromium', 'firefox', 'webkit']
         type AutomationBrowser = typeof automationBrowsers[number]
         const automationBrowser = env('UI_AUTOMATION_BROWSER') as AutomationBrowser
-        let browserType = chromium
+        let browserType: any = undefined
         const browserOptions = {
             devtools: process.env.DEVTOOLS !== 'false',
             headless: process.env.HEADLESS !== 'false',

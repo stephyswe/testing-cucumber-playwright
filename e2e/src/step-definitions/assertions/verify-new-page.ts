@@ -12,7 +12,7 @@ Then(
         console.log(`the ${elementPosition} window|tab should ${negate?'not ':''}contain the title ${expectedTitle}`)
 
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1
-        await page.waitForTimeout(1000)
+        await page.waitForTimeout(2000)
         await waitFor(async () => {
             let pages = context.pages();
             const pageTitle = await pages[pageIndex].title()
