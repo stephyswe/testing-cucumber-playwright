@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import * as fs from "fs";
 import {env, getJsonFromFile} from './env/parseEnv'
-import {GlobalConfig, HostsConfig, PagesConfig, PageElementMapping} from './env/global'
+import {GlobalConfig, HostsConfig, PagesConfig, EmailsConfig, PageElementMapping} from './env/global'
 
 const environment = env("NODE_ENV")
 
@@ -10,6 +10,7 @@ dotenv.config({path: `${env("ENV_PATH")}${environment}.env`})
 
 const hostsConfig: HostsConfig = getJsonFromFile(env("HOSTS_URL_PATH"))
 const pagesConfig: PagesConfig = getJsonFromFile(env("PAGE_URL_PATH"))
+const emailsConfig: EmailsConfig = getJsonFromFile(env('EMAILS_URL_PATH'))
 const mappingFiles = fs.readdirSync(`${process.cwd()}${env("PAGE_ELEMENTS_PATH")}`)
 
 const pageElementMappings: PageElementMapping = mappingFiles.reduce(
@@ -21,7 +22,7 @@ const pageElementMappings: PageElementMapping = mappingFiles.reduce(
 )
 
 const worldParameters: GlobalConfig = {
-    hostsConfig, pagesConfig, pageElementMappings
+    hostsConfig, pagesConfig, emailsConfig, pageElementMappings
 }
 
 const common = `./src/features/**/*.feature \

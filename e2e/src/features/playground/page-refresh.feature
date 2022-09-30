@@ -1,6 +1,5 @@
 Feature: As a user I can refresh the browser and see the application
 
-  @dev
   @smoke
   @regression
   Scenario: As a user I can refresh the browser and be on the page expected
