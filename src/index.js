@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 import { Helmet } from 'react-helmet'
 import ReactDOM from 'react-dom';

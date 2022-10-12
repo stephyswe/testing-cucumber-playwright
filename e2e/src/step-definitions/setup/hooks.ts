@@ -8,6 +8,7 @@ Before(async function(this: ScenarioWorld, scenario: ITestCaseHookParameter) {
     console.log(`Running cucumber scenario ${scenario.pickle.name}`)
 
     const contextOptions = {
+        ignoreHttpsErrors: true,
         recordVideo: {
             dir: `${env('VIDEO_PATH')}${scenario.pickle.name}`,
         }
