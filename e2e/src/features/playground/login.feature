@@ -1,6 +1,6 @@
 Feature: As a user I can interact with login forms
 
-  @dev
+  @smoke
   Scenario Outline: As a user I can populate login details leveraging environment variables
     Given I am on the "home" page
     And I click the "playground" button
@@ -19,3 +19,20 @@ Feature: As a user I can interact with login forms
     Examples:
       | password           |
       | PasswordProduction |
+
+    @dev
+    Scenario Outline: As a user I expect validation on the login input for an incorrect email
+      Given I am on the "home" page
+      And I click the "playground" button
+      When I am directed to the "playground" page
+      And I fill in the "email" input with "<email>"
+      Then I fill in the "password" input with "Password1234"
+      And the "email error" should contain the text "Please include an '@' in the email address."
+
+
+      Examples:
+        | email            |
+        | cam.testingtalks |
+        | cam.testingtalks |
+        | cam.             |
+
