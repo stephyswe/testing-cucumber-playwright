@@ -7,13 +7,14 @@ import {
 import { waitFor } from '../support/wait-for-behavior'
 import { getElementLocator } from '../support/web-element-helper'
 import { ElementKey } from '../env/global'
+import {logger} from "../logger";
 
 Then(
     /^I (check)?(uncheck)? the "([^"]*)" (?:check box|radio button|switch)$/,
     async function(this: ScenarioWorld, checked: boolean, unchecked: boolean, elementKey: ElementKey) {
         const {screen: {page}, globalConfig} = this
 
-        console.log(`I ${unchecked?'uncheck ':'check'} the ${elementKey} check box|radio button`);
+        logger.log(`I ${unchecked?'uncheck ':'check'} the ${elementKey} check box|radio button`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig);
         await waitFor(async () => {

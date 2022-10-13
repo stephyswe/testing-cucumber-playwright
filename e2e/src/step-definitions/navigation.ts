@@ -20,7 +20,7 @@ Given(
     /^I am directed to the "([^"]*)" page$/,
     async function(this: ScenarioWorld, pageId: PageId) {
         const {screen: {page}, globalConfig} = this
-        console.log(`I am directed to the ${pageId} page`)
+        logger.log(`I am directed to the ${pageId} page`)
 
         await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig))
     }
@@ -30,7 +30,7 @@ Given(
     /^I refresh the "([^"]*)" page$/,
     async function (this: ScenarioWorld, pageId: PageId) {
         const {screen: {page}, globalConfig} = this
-        console.log(`I refresh the ${pageId} page`)
+        logger.log(`I refresh the ${pageId} page`)
 
         await reloadPage(page)
         await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig), {

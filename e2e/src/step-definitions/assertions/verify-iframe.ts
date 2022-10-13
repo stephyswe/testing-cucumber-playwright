@@ -4,13 +4,14 @@ import { ScenarioWorld } from '../setup/world'
 import { getElementLocator } from '../../support/web-element-helper'
 import { ElementKey } from '../../env/global'
 import { getIframeElement } from '../../support/html-behavior'
+import {logger} from "../../logger";
 
 Then(
     /^the "([^"]*)" on the "([^"]*)" iframe should( not)? be displayed$/,
     async function(this: ScenarioWorld, elementKey: ElementKey, iframeName: string, negate: boolean) {
         const {screen: {page}, globalConfig} = this
 
-        console.log(`the ${elementKey} on the ${iframeName} iframe should ${negate?'not ':''}be displayed`);
+        logger.log(`the ${elementKey} on the ${iframeName} iframe should ${negate?'not ':''}be displayed`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)
@@ -27,7 +28,7 @@ Then(
     async function(this: ScenarioWorld, elementKey: ElementKey, iframeName: string, negate: boolean, expectedElementText: string) {
         const {screen: {page}, globalConfig} = this
 
-        console.log(`the ${elementKey} should ${negate?'not ':''}contain the text ${expectedElementText}`)
+        logger.log(`the ${elementKey} should ${negate?'not ':''}contain the text ${expectedElementText}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)
@@ -44,7 +45,7 @@ Then(
     async function(this: ScenarioWorld, elementKey: ElementKey, iframeName: string, negate: boolean, expectedElementText: string) {
         const {screen: {page}, globalConfig} = this
 
-        console.log(`the ${elementKey} should ${negate?'not ':''}equal the text ${expectedElementText}`)
+        logger.log(`the ${elementKey} should ${negate?'not ':''}equal the text ${expectedElementText}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)

@@ -27,7 +27,7 @@ Then(
     async function(this: ScenarioWorld, elementKey: ElementKey, negate: boolean, expectedElementText: string) {
         const {screen: {page}, globalConfig} = this;
 
-        console.log(`the ${elementKey} should ${negate?'not':''}equal the text ${expectedElementText}`)
+        logger.log(`the ${elementKey} should ${negate?'not':''}equal the text ${expectedElementText}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor(async () => {
@@ -42,7 +42,7 @@ Then(
     async function(this: ScenarioWorld, elementKey: ElementKey, negate: boolean, elementValue: string) {
         const {screen: { page }, globalConfig} = this;
 
-        console.log(`the ${elementKey} should ${negate?'not':''}contain the value ${elementValue}`)
+        logger.log(`the ${elementKey} should ${negate?'not':''}contain the value ${elementValue}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor(async () => {
@@ -57,7 +57,7 @@ Then(
     async function(this: ScenarioWorld, elementKey: ElementKey, negate: boolean, elementValue: string) {
         const {screen: { page }, globalConfig} = this;
 
-        console.log(`the ${elementKey} should ${negate?'not':''}equal the value ${elementValue}`)
+        logger.log(`the ${elementKey} should ${negate?'not':''}equal the value ${elementValue}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor(async () => {
@@ -72,7 +72,7 @@ Then(
     async function(this: ScenarioWorld, elementKey: ElementKey, negate: boolean) {
         const {screen: { page }, globalConfig} = this;
 
-        console.log(`the ${elementKey} should ${negate?'not':''}be enabled`)
+        logger.log(`the ${elementKey} should ${negate?'not':''}be enabled`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor(async () => {
@@ -87,7 +87,7 @@ Then(
     async function (this: ScenarioWorld, elementPosition: string, elementKey: ElementKey, negate: boolean, expectedElementText: string) {
         const {screen: { page }, globalConfig} = this;
 
-        console.log(`the ${elementPosition} ${elementKey} should ${negate?'not ':''}contain the text ${expectedElementText}`)
+        logger.log(`the ${elementPosition} ${elementKey} should ${negate?'not ':''}contain the text ${expectedElementText}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const pageIndex = Number(elementPosition.match(/\d/g)?.join('')) -1
@@ -103,7 +103,7 @@ Then(
     async function(this: ScenarioWorld, elementKey: ElementKey, attribute: string, negate: boolean, expectedElementText: string) {
         const {screen: { page }, globalConfig} = this;
 
-        console.log(`the ${elementKey} ${attribute} attribute should ${negate?'not ':''}contain the text ${expectedElementText}`)
+        logger.log(`the ${elementKey} ${attribute} attribute should ${negate?'not ':''}contain the text ${expectedElementText}`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor(async () => {

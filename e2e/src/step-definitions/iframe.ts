@@ -7,13 +7,14 @@ import {
 import { getElementLocator } from '../support/web-element-helper'
 import { ScenarioWorld } from './setup/world'
 import { ElementKey } from '../env/global'
+import {logger} from "../logger";
 
 Then(
     /^I fill in the "([^"]*)" input on the "([^"]*)" iframe with "([^"]*)"$/,
     async function (this: ScenarioWorld, elementKey: ElementKey, iframeName: string, inputValue: string) {
         const {screen: {page}, globalConfig} = this
 
-        console.log(`I fill in the ${elementKey} input on the ${iframeName} iframe with ${inputValue}`);
+        logger.log(`I fill in the ${elementKey} input on the ${iframeName} iframe with ${inputValue}`);
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const iframeIdentifier = getElementLocator(page, iframeName, globalConfig)

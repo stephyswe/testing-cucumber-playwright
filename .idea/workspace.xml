@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bce1d527-c564-4480-ae27-6d22624bd655" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/e2e/src/env/parseEnv.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/features/home-page.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-element-visibility.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/step-definitions/navigation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/step-definitions/setup/hooks.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/step-definitions/setup/world.ts" afterDir="false" />
+    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): custom logger - debug messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/reports/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/reports/report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/reports/screenshots/As a user I expect to be able to see contacts.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,61 +98,87 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Dev/code-testing/react-app&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Dev\\code-testing\\react-app\\e2e\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Dev/code-testing/cucumber-playwright",
+    "nodejs_package_manager_path": "yarn",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "CodeWithMe",
+    "ts.external.directory.path": "D:\\Dev\\code-testing\\cucumber-playwright\\e2e\\node_modules\\typescript\\lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\code-testing\react-app\e2e\src\step-definitions\assertions" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.cucumber:dev">
-    <configuration name="cucumber:dev" type="js.build_tools.npm">
+  <component name="RunManager" selected="npm.cucumber :localhost">
+    <configuration name="cucumber :localhost (regression)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/e2e/package.json" />
       <command value="run" />
       <scripts>
-        <script value="cucumber:dev" />
+        <script value="cucumber:localhost" />
       </scripts>
+      <arguments value="--profile regression" />
       <node-interpreter value="project" />
       <envs>
-        <env name="UI_AUTOMATION_BROWSER" value="chromium" />
+        <env name="COMMON_CONFIG_FILE" value="env/common.env" />
       </envs>
       <method v="2" />
     </configuration>
-    <configuration name="cucumber:regression" type="js.build_tools.npm">
+    <configuration name="cucumber :localhost (smoke)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/e2e/package.json" />
       <command value="run" />
       <scripts>
-        <script value="cucumber:regression" />
+        <script value="cucumber:localhost" />
       </scripts>
+      <arguments value="--profile smoke" />
       <node-interpreter value="project" />
-      <envs />
+      <envs>
+        <env name="COMMON_CONFIG_FILE" value="env/common.env" />
+      </envs>
       <method v="2" />
     </configuration>
-    <configuration name="cucumber:smoke" type="js.build_tools.npm">
+    <configuration name="cucumber :localhost" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/e2e/package.json" />
       <command value="run" />
       <scripts>
-        <script value="cucumber:smoke" />
+        <script value="cucumber:localhost" />
       </scripts>
+      <arguments value="--profile dev" />
       <node-interpreter value="project" />
-      <envs />
+      <envs>
+        <env name="COMMON_CONFIG_FILE" value="env/common.env" />
+      </envs>
+      <method v="2" />
+    </configuration>
+    <configuration name="cucumber :production" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/e2e/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cucumber:production" />
+      </scripts>
+      <arguments value="--profile dev" />
+      <node-interpreter value="project" />
+      <envs>
+        <env name="COMMON_CONFIG_FILE" value="env/common.env" />
+      </envs>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.cucumber:dev" />
-      <item itemvalue="npm.cucumber:smoke" />
-      <item itemvalue="npm.cucumber:regression" />
+      <item itemvalue="npm.cucumber :localhost" />
+      <item itemvalue="npm.cucumber :localhost (regression)" />
+      <item itemvalue="npm.cucumber :localhost (smoke)" />
+      <item itemvalue="npm.cucumber :production" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -166,14 +187,121 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bce1d527-c564-4480-ae27-6d22624bd655" name="Default Changelist" comment="" />
+      <changelist id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): custom waitFor variable" />
       <created>1638155757223</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638155757223</updated>
       <workItem from="1664199055575" duration="13699000" />
       <workItem from="1664230713678" duration="1248000" />
+      <workItem from="1664347552261" duration="20922000" />
+      <workItem from="1664377020340" duration="21843000" />
+      <workItem from="1664526236371" duration="3839000" />
+      <workItem from="1664954649199" duration="2991000" />
+      <workItem from="1665046174066" duration="1188000" />
+      <workItem from="1665558320041" duration="3712000" />
+      <workItem from="1665610905302" duration="1276000" />
+      <workItem from="1665651644935" duration="11120000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(cucumber): mapping with json">
+      <created>1664288111520</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664288111520</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(cucumber): custom waitFor variable">
+      <created>1664291010549</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664291010549</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(cucumber): remove globalVariables, custom pageId check">
+      <created>1664354570033</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664354570033</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(cucumber): forms with input &amp; select">
+      <created>1664363632118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664363632118</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(cucumber): devtools &amp; equal assertion">
+      <created>1664370914818</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664370914818</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(cucumber): playground &amp; various scenarios">
+      <created>1664436027210</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664436027210</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(cucumber): production env">
+      <created>1664442089648</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664442089648</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(cucumber): stabilize on production">
+      <created>1664458230741</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664458230741</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(cucumber): production email variable">
+      <created>1664529509063</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664529509063</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(cucumber): production example table">
+      <created>1665563959606</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665563959606</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat(cucumber): inputs &amp; login example table">
+      <created>1665653342902</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665653342902</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat(cucumber): browser device testing">
+      <created>1665659571174</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665659571174</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat(cucumber): custom logger">
+      <created>1665667451730</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665667451730</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(cucumber): custom logger - debug messages">
+      <created>1665667920429</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665667920429</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -223,6 +351,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(cucumber): mapping with json" />
+    <MESSAGE value="feat(cucumber): custom waitFor variable" />
+    <MESSAGE value="feat(cucumber): remove globalVariables, custom pageId check" />
+    <MESSAGE value="feat(cucumber): forms with input &amp; select" />
+    <MESSAGE value="feat(cucumber): devtools &amp; equal assertion" />
+    <MESSAGE value="feat(cucumber): playground &amp; various scenarios" />
+    <MESSAGE value="feat(cucumber): production env" />
+    <MESSAGE value="feat(cucumber): stabilize on production" />
+    <MESSAGE value="feat(cucumber): production email variable" />
+    <MESSAGE value="feat(cucumber): production example table" />
+    <MESSAGE value="feat(cucumber): inputs &amp; login example table" />
+    <MESSAGE value="feat(cucumber): browser device testing" />
+    <MESSAGE value="feat(cucumber): custom logger" />
+    <MESSAGE value="feat(cucumber): custom logger - debug messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): custom logger - debug messages" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">

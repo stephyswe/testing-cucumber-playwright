@@ -25,7 +25,7 @@ Then(
     async function(this: ScenarioWorld, elementPosition: string, elementKey: ElementKey, negate: boolean) {
         const {screen: { page }, globalConfig} = this;
 
-        console.log(`the ${elementPosition} ${elementKey} should ${negate?'not':''}be displayed`)
+        logger.log(`the ${elementPosition} ${elementKey} should ${negate?'not':''}be displayed`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         const index = Number(elementPosition.match(/\d/g)?.join('')) - 1;
@@ -41,7 +41,7 @@ Then(
     async function(this: ScenarioWorld, negate: boolean, count: string, elementKey: ElementKey) {
         const {screen: { page }, globalConfig} = this;
 
-        console.log(`I should ${negate?'not ':''}see ${count} ${elementKey} displayed`)
+        logger.log(`I should ${negate?'not ':''}see ${count} ${elementKey} displayed`)
 
         const elementIdentifier = getElementLocator(page, elementKey, globalConfig)
         await waitFor(async () => {
