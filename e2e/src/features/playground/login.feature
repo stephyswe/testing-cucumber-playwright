@@ -1,6 +1,6 @@
 Feature: As a user I can interact with login forms
 
-  @smoke
+  @dev
   Scenario Outline: As a user I can populate login details leveraging environment variables
     Given I am on the "home" page
     And I click the "playground" button
@@ -20,7 +20,7 @@ Feature: As a user I can interact with login forms
       | password           |
       | PasswordProduction |
 
-    @dev
+    @smoke
     Scenario Outline: As a user I expect validation on the login input for an incorrect email
       Given I am on the "home" page
       And I click the "playground" button
