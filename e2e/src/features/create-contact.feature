@@ -1,6 +1,6 @@
 Feature: As a user I expect to be able to create contacts
 
-  @regression
+  @smoke
   Scenario: As a user I expect to be able to create a new contact
     Given I am on the "home" page
     And I click the "create" button
@@ -32,7 +32,6 @@ Feature: As a user I expect to be able to create contacts
     And the "delete" should be displayed
 
   @smoke
-  @regression
   Scenario: As a user I do not expect saved contacts to persist after a page refresh
     Given I am on the "home" page
     And I click the "create" button

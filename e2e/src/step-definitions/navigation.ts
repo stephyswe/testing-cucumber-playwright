@@ -3,12 +3,13 @@ import {PageId} from '../env/global'
 import {navigateToPage, currentPathMatchesPageId, reloadPage} from "../support/navigation-behavior";
 import {ScenarioWorld} from "./setup/world";
 import {waitFor} from "../support/wait-for-behavior";
+import {logger} from "../logger";
 
 Given(
     /^I am on the "([^"]*)" page$/,
     async function(this: ScenarioWorld, pageId: PageId) {
         const {screen: {page}, globalConfig} = this;
-        console.log(`I am on the ${pageId} page`)
+        logger.log(`I am on the ${pageId} page`)
 
         await navigateToPage(page, pageId, globalConfig)
         await waitFor(() => currentPathMatchesPageId(page, pageId, globalConfig))
