@@ -24,6 +24,6 @@ Then(
                 await inputValueOnPage(pages, pageIndex, elementIdentifier, inputValue)
             }
             return elementStable
-        })
+        }, globalConfig, {target: elementKey})
     }
 )

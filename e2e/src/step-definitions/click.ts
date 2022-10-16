@@ -20,7 +20,7 @@ When(
                 await clickElement(page, elementIdentifier)
             }
             return elementStable
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -39,6 +39,6 @@ When(
                 await clickElementAtIndex(page, elementIdentifier, pageIndex)
             }
             return elementStable;
-        })
+        }, globalConfig, {target: elementKey})
     }
 )

@@ -22,7 +22,7 @@ Then(
                 await inputElementValue(page, elementIdentifier, parsedInput);
             }
             return elementStable
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -38,6 +38,6 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier)
             if (elementStable) await selectElementValue(page, elementIdentifier, option);
             return elementStable
-        })
+        }, globalConfig, {target: elementKey})
     }
 )

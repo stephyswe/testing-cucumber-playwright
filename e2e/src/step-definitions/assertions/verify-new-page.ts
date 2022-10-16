@@ -9,7 +9,7 @@ import {logger} from "../../logger";
 Then(
     /^the "([0-9]+th|[0-9]+st|[0-9]+nd|[0-9]+rd)" (?:tab|window) should( not)? contain the title "(.*)"$/,
     async function(this: ScenarioWorld, elementPosition: string, negate: boolean, expectedTitle: string) {
-        const {screen: { page, context}} = this
+        const {screen: { page, context}, globalConfig} = this
 
         logger.log(`the ${elementPosition} window|tab should ${negate?'not ':''}contain the title ${expectedTitle}`)
 
@@ -19,7 +19,7 @@ Then(
             let pages = context.pages();
             const pageTitle = await getTitleWithinPage(page, pages, pageIndex)
             return pageTitle?.includes(expectedTitle) === !negate
-        })
+        }, globalConfig, {type: 'title'})
     }
 )
 
@@ -36,7 +36,7 @@ Then(
             let pages = context.pages();
             const isElementVisible = await getElementOnPage(page, elementIdentifier, pages, pageIndex) != null;
             return isElementVisible === !negate
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -58,7 +58,7 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -80,7 +80,7 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 

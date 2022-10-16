@@ -18,6 +18,6 @@ Then(
             const elementStable = await waitForSelector(page, elementIdentifier)
             if (elementStable) await scrollElementIntoView(page, elementIdentifier)
             return elementStable;
-        })
+        }, globalConfig, {target: elementKey})
     }
 )

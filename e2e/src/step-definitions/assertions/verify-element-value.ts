@@ -29,7 +29,7 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -50,7 +50,7 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 );
 
@@ -70,7 +70,7 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -90,7 +90,7 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -110,7 +110,7 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -132,8 +132,7 @@ Then(
             } else {
                 return elementStable
             }
-
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
 
@@ -154,6 +153,6 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 )

@@ -26,6 +26,6 @@ Then(
                 if (elementIframe) await inputValueOnIframe(elementIframe, elementIdentifier, inputValue)
             }
             return iframeStable;
-        })
+        }, globalConfig, {target: elementKey})
     }
 )

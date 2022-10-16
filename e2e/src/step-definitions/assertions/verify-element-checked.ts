@@ -22,6 +22,6 @@ Then(
             } else {
                 return elementStable
             }
-        })
+        }, globalConfig, {target: elementKey})
     }
 )
