@@ -1,6 +1,5 @@
 Feature: As a user I expect to be able to create contacts
 
-  @dev
   @smoke
   Scenario: As a user I expect to be able to create a new contact
     Given I am on the "home" page

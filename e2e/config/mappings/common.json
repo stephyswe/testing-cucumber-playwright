@@ -1,5 +1,5 @@
 {
-  "header logo": "[data-id='header-logo-fake']",
+  "header logo": "[data-id='header-logo']",
   "search": "[data-id='search']",
   "contact": "[data-id='contact']",
   "full name label": "[data-id='full-name-label']",
