@@ -29,16 +29,14 @@ Feature: As a user I can interact with login forms
       Then I fill in the "password" input with "Password1234"
       And the "email error" should contain the text "Please include an '@' in the email address."
 
-
       Examples:
         | email            |
         | cam.testingtalks |
         | cam.testingtalks |
         | cam.             |
 
-      @dev
-      @smoke
-        Scenario: As a user I am able to input a random email
+    @smoke
+      Scenario: As a user I am able to input a random email
         Given I am on the "home" page
         And I click the "playground" button
         When I am directed to the "playground" page
