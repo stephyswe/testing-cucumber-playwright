@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): custom logger - debug messages">
+    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): custom logger - console.log to logger.log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/env/common.env" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/env/common.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/reports/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/reports/report.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/reports/screenshots/As a user I expect to be able to see contacts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/features/home-page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/home-page.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/check.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/check.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/click.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/click.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/form.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/iframe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/iframe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/scroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/scroll.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/stored.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/stored.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/support/wait-for-behavior.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/support/wait-for-behavior.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,18 +108,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Dev/code-testing/cucumber-playwright",
-    "nodejs_package_manager_path": "yarn",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "CodeWithMe",
-    "ts.external.directory.path": "D:\\Dev\\code-testing\\cucumber-playwright\\e2e\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Dev/code-testing/cucumber-playwright&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Dev\\code-testing\\cucumber-playwright\\e2e\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dev\code-testing\react-app\e2e\src\step-definitions\assertions" />
@@ -121,7 +131,7 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.cucumber :localhost">
+  <component name="RunManager" selected="npm.cucumber :localhost (regression)">
     <configuration name="cucumber :localhost (regression)" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/e2e/package.json" />
       <command value="run" />
@@ -201,7 +211,10 @@
       <workItem from="1665046174066" duration="1188000" />
       <workItem from="1665558320041" duration="3712000" />
       <workItem from="1665610905302" duration="1276000" />
-      <workItem from="1665651644935" duration="11120000" />
+      <workItem from="1665651644935" duration="16138000" />
+      <workItem from="1665730139709" duration="1927000" />
+      <workItem from="1665818930528" duration="1824000" />
+      <workItem from="1665907220496" duration="1363000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cucumber): mapping with json">
       <created>1664288111520</created>
@@ -301,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665667920429</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat(cucumber): custom logger - console.log to logger.log">
+      <created>1665668280274</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665668280274</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -367,7 +387,8 @@
     <MESSAGE value="feat(cucumber): browser device testing" />
     <MESSAGE value="feat(cucumber): custom logger" />
     <MESSAGE value="feat(cucumber): custom logger - debug messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): custom logger - debug messages" />
+    <MESSAGE value="feat(cucumber): custom logger - console.log to logger.log" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): custom logger - console.log to logger.log" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
