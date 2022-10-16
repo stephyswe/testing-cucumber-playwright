@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): custom logger - console.log to logger.log">
+    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): waitForSelector - all steps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/env/common.env" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/env/common.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/reports/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/reports/report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/reports/screenshots/As a user I expect to be able to see contacts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/home-page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/home-page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/check.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/check.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/click.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/click.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/form.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/form.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/iframe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/iframe.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/scroll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/scroll.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/stored.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/stored.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-element-checked.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-element-checked.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-element-value.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-element-value.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-element-visibility.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-element-visibility.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-iframe.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-iframe.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-new-page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-new-page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-stored-value.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-stored-value.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-table-value.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/step-definitions/assertions/verify-table-value.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/support/html-behavior.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/support/html-behavior.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/src/support/wait-for-behavior.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/support/wait-for-behavior.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +211,7 @@
       <workItem from="1665651644935" duration="16138000" />
       <workItem from="1665730139709" duration="1927000" />
       <workItem from="1665818930528" duration="1824000" />
-      <workItem from="1665907220496" duration="1363000" />
+      <workItem from="1665907220496" duration="3755000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cucumber): mapping with json">
       <created>1664288111520</created>
@@ -321,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665668280274</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat(cucumber): waitForSelector - all steps">
+      <created>1665908982689</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665908982689</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -388,7 +392,8 @@
     <MESSAGE value="feat(cucumber): custom logger" />
     <MESSAGE value="feat(cucumber): custom logger - debug messages" />
     <MESSAGE value="feat(cucumber): custom logger - console.log to logger.log" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): custom logger - console.log to logger.log" />
+    <MESSAGE value="feat(cucumber): waitForSelector - all steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): waitForSelector - all steps" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
