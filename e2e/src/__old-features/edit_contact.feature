@@ -1,6 +1,6 @@
 Feature: As a user I expect to be able to edit a new contact
 
-  @regression
+  @smoke
   Scenario: As a user I can edit a new contact
     Given I am on the "home" page
     And I click the "create" button

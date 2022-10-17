@@ -1,8 +1,7 @@
-Feature: As a user I expect to be able to create a new contact
+Feature: As a user I expect to be able to cancel the creation a new contact
 
   @smoke
-  @regression
-  Scenario: As a user I can cancel creating a a new contact
+  Scenario: As a user I can cancel creating a new contact
     Given I am on the "home" page
     And I click the "create" button
     When I am directed to the "create contact" page
@@ -21,7 +20,7 @@ Feature: As a user I expect to be able to create a new contact
     And the "contact" should not be displayed
     And the "no items message" should contain the text "There are no items to display"
 
-  @regression
+  @smoke
   Scenario: As a user I can cancel an edit to a new contact
     Given I am on the "home" page
     And I click the "create" button
@@ -64,6 +63,3 @@ Feature: As a user I expect to be able to create a new contact
     And the "address" should contain the text "710 Evergreen Terrace, Springfield"
     And the "edit" should be displayed
     And the "delete" should be displayed
-
-
-

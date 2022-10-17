@@ -1,6 +1,6 @@
 Feature: As a user I expect to be able to delete a new contact
 
-  @regression
+  @smoke
   Scenario: As a user I can delete a new contact
     Given I am on the "home" page
     And I click the "create" button
@@ -31,7 +31,7 @@ Feature: As a user I expect to be able to delete a new contact
     And the "contact" should not be displayed
     And the "no items message" should contain the text "There are no items to display"
 
-  @regression
+  @smoke
   Scenario: As a user I can back out of deleting a new contact
     Given I am on the "home" page
     And I click the "create" button
@@ -70,7 +70,6 @@ Feature: As a user I expect to be able to delete a new contact
     And the "delete" should be displayed
 
   @smoke
-  @regression
   Scenario: As a user I can create delete the second searched contact
     Given I am on the "home" page
     And I click the "create" button

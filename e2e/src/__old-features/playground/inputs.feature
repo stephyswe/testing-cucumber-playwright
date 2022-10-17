@@ -11,10 +11,10 @@ Feature: As a user I can interact with autocomplete inputs
     And the "movies" should contain the value "<movie>"
     And the "movies" should not contain the value "The Godfather: Part II"
 
-  Examples:
-    | search | movie button    | movie           |
-    | The G  | the godfather   | The Godfather   |
-    | The D  | the dark knight | The Dark Knight |
+    Examples:
+      | search | movie button    | movie           |
+      | the G  | the godfather   | The Godfather   |
+      | the D  | the dark knight | The Dark Knight |
 
   @smoke
   @regression

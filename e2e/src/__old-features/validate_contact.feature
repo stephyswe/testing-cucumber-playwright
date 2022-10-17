@@ -1,7 +1,6 @@
 Feature: As a user I expect to be able to validate a new contact
 
   @smoke
-  @regression
   Scenario: As a user I can hit a validation error on each field then create a new contact
     Given I am on the "home" page
     And I click the "create" button
@@ -31,7 +30,7 @@ Feature: As a user I expect to be able to validate a new contact
     And the "edit" should be displayed
     And the "delete" should be displayed
 
-  @regression
+  @smoke
   Scenario: As a user I can hit a validation error on each field on edit contact
     Given I am on the "home" page
     And I click the "create" button

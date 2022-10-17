@@ -1,14 +1,14 @@
 Feature: Generate accessibility reports across our website
 
   @accessibility
-  @regression
+  @smoke
   Scenario: Generate an accessibility report for the Home page
     Given I am on the "home" page
     And I inject axe accessibility engine
     Then I generate an accessibility analysis report
 
   @accessibility
-  @regression
+  @smoke
   Scenario: Generate an accessibility report for the Create Contact page
     Given I am on the "home" page
     And I click the "create" button
@@ -18,7 +18,7 @@ Feature: Generate accessibility reports across our website
 
 
   @accessibility
-  @regression
+  @smoke
   Scenario: Generate an accessibility report for the Edit Contact page
     Given I am on the "home" page
     And I click the "1st" "edit" button
@@ -27,7 +27,7 @@ Feature: Generate accessibility reports across our website
     Then I generate an accessibility analysis report
 
   @accessibility
-  @regression
+  @smoke
   Scenario: Generate an accessibility report for the Playground page
     Given I am on the "home" page
     And I click the "playground" button

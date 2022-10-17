@@ -1,13 +1,15 @@
 Feature: As a user I expect to be able to search a new contact
 
   @smoke
+  @regression
   Scenario: As a user I can search for a contact that does not exist
     Given I am on the "home" page
-    And I fill in the "search" input with "Montgomery Burns"
+      And I fill in the "search" input with "Montgomery Burns"
     When the "contact" should not be displayed
-    And the "no items message" should contain the text "There are no items to display"
+      And the "no items message" should contain the text "There are no items to display"
 
   @smoke
+  @regression
   Scenario: As a user I can search for a new contact
     Given I am on the "home" page
     And I click the "create" button
@@ -31,7 +33,8 @@ Feature: As a user I expect to be able to search a new contact
     And the "edit" should be displayed
     And the "delete" should be displayed
 
-  @smoke
+
+  @regression
   Scenario: As a user I can search for a edited contact
     Given I am on the "home" page
     And I click the "create" button
