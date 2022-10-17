@@ -20,6 +20,8 @@
     "@cucumber/cucumber": "^8.6.0",
     "@faker-js/faker": "^7.6.0",
     "@playwright/test": "^1.26.0",
+    "axe-html-reporter": "^2.2.3",
+    "axe-playwright": "^1.1.11",
     "cross-env": "^7.0.3",
     "cucumber-html-reporter": "^5.5.0",
     "dotenv": "^16.0.2",
