@@ -1,54 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): fixing accessibility issues (all but scroll)">
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/accessibility/accessibility.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/cancel-contact.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/create-contact.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/delete-contact.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/edit_contact.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/home-page.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/avatars.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/browser-alerts.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/buttons.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/cards.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/checkboxes.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/drop-down-menus.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/hidden-text.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/iframes.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/inputs.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/links.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/login.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/mock.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/page-alerts.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/page-refresh.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/radio-buttons.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/select-boxes.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/stored-values.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/switches.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/tables.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/tabs.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/text-areas.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/tooltips.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/playground/windows.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/search_contact.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/__old-features/validate_contact.feature" afterDir="false" />
+    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): gitignore e2e folders">
+      <change afterPath="$PROJECT_DIR$/.buildkite/pipeline.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/buildkite-automation.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/env/common.env" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/env/common.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/reports/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/reports/report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/reports/screenshots/As a user I expect to be able to see contacts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/accessibility/accessibility.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/accessibility/accessibility.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/cancel-contact.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/cancel-contact.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/create-contact.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/create-contact.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/delete-contact.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/delete-contact.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/edit_contact.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/edit_contact.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/home-page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/home-page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/playground/inputs.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/playground/inputs.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/playground/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/playground/login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/playground/mock.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/playground/mock.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/playground/radio-buttons.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/playground/radio-buttons.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/search_contact.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/search_contact.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/validate_contact.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/validate_contact.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/run_tests.sh" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/run_tests.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +108,7 @@
     "last_opened_file_path": "D:/Dev/code-testing/cucumber-playwright",
     "nodejs_package_manager_path": "yarn",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "CodeWithMe",
+    "settings.editor.selected.configurable": "terminal",
     "ts.external.directory.path": "D:\\Dev\\code-testing\\cucumber-playwright\\e2e\\node_modules\\typescript\\lib"
   }
 }]]></component>
@@ -250,7 +207,7 @@
       <workItem from="1665730139709" duration="1927000" />
       <workItem from="1665818930528" duration="1824000" />
       <workItem from="1665907220496" duration="27183000" />
-      <workItem from="1665995501343" duration="10151000" />
+      <workItem from="1665995501343" duration="13356000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cucumber): mapping with json">
       <created>1664288111520</created>
@@ -413,7 +370,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666004304083</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat(cucumber): e2e - fix features tags">
+      <created>1666007725522</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1666007725522</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat(cucumber): gitignore e2e folders">
+      <created>1666007802938</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666007802938</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,7 +460,13 @@
     <MESSAGE value="feat(cucumber): intercept &amp; mock api data" />
     <MESSAGE value="feat(cucumber): create accessibility reports with axe" />
     <MESSAGE value="feat(cucumber): fixing accessibility issues (all but scroll)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): fixing accessibility issues (all but scroll)" />
+    <MESSAGE value="feat(cucumber): e2e - fix features tags" />
+    <MESSAGE value="feat(cucumber): gitignore e2e folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): gitignore e2e folders" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
