@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): intercept &amp; mock api data">
-      <change afterPath="$PROJECT_DIR$/e2e/src/features/accessibility/accessibility.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/src/step-definitions/accessibility.ts" afterDir="false" />
+    <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): create accessibility reports with axe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/env/common.env" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/env/common.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/reports/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/reports/report.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/reports/screenshots/As a user I expect to be able to see contacts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/step-definitions/alert.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/playground.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/playground.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BasicCheckBox.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasicCheckBox.react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BasicIframe.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasicIframe.react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BasicIndex.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasicIndex.react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BasicLogin.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BasicLogin.react.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +213,7 @@
       <workItem from="1665730139709" duration="1927000" />
       <workItem from="1665818930528" duration="1824000" />
       <workItem from="1665907220496" duration="27183000" />
-      <workItem from="1665995501343" duration="2232000" />
+      <workItem from="1665995501343" duration="7884000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cucumber): mapping with json">
       <created>1664288111520</created>
@@ -361,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665997406506</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat(cucumber): create accessibility reports with axe">
+      <created>1665997943707</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1665997943707</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -435,7 +443,8 @@
     <MESSAGE value="feat(cucumber): error handling - waitForResult to handle error cases" />
     <MESSAGE value="feat(cucumber): random test data (faker)" />
     <MESSAGE value="feat(cucumber): intercept &amp; mock api data" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): intercept &amp; mock api data" />
+    <MESSAGE value="feat(cucumber): create accessibility reports with axe" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(cucumber): create accessibility reports with axe" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">

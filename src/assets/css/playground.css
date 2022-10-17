@@ -73,3 +73,7 @@
   padding: 5px;
   width:120px;
 }
+
+.Playground .mui-textfield.mui-textfield--float-label > label {
+  color: #000;
+}
