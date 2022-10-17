@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c09f418-f325-4548-be82-27429f18b124" name="Changes" comment="feat(cucumber): random test data (faker)">
+      <change afterPath="$PROJECT_DIR$/e2e/config/json_payloads/multiple users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/config/json_payloads/no users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/config/json_payloads/single user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/config/json_payloads/six users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/config/mocks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/features/playground/mock.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/step-definitions/mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/src/support/mock-behavior.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/config/mappings/common.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/config/mappings/common.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/config/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/config/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/config/hosts.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/config/hosts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/config/mappings/playground.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/config/mappings/playground.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/env/common.env" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/env/common.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/reports/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/reports/report.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/reports/screenshots/As a user I expect to be able to see contacts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/home-page.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/home-page.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/src/features/playground/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/features/playground/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/env/global.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/env/global.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,18 +111,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Dev/code-testing/cucumber-playwright&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;CodeWithMe&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Dev\\code-testing\\cucumber-playwright\\e2e\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Dev/code-testing/cucumber-playwright",
+    "nodejs_package_manager_path": "yarn",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "CodeWithMe",
+    "ts.external.directory.path": "D:\\Dev\\code-testing\\cucumber-playwright\\e2e\\node_modules\\typescript\\lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Dev\code-testing\react-app\e2e\src\step-definitions\assertions" />
@@ -210,6 +219,7 @@
       <workItem from="1665730139709" duration="1927000" />
       <workItem from="1665818930528" duration="1824000" />
       <workItem from="1665907220496" duration="27183000" />
+      <workItem from="1665995501343" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="feat(cucumber): mapping with json">
       <created>1664288111520</created>
@@ -403,6 +413,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat(cucumber): mapping with json" />
     <MESSAGE value="feat(cucumber): custom waitFor variable" />
     <MESSAGE value="feat(cucumber): remove globalVariables, custom pageId check" />

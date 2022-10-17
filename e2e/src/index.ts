@@ -1,7 +1,15 @@
 import dotenv from 'dotenv'
 import * as fs from "fs";
 import {env, getJsonFromFile} from './env/parseEnv'
-import {GlobalConfig, HostsConfig, PagesConfig, EmailsConfig, PageElementMapping, ErrorsConfig} from './env/global'
+import {
+    GlobalConfig,
+    HostsConfig,
+    PagesConfig,
+    EmailsConfig,
+    PageElementMappings,
+    ErrorsConfig,
+    MockPayloadMappings, MocksConfig
+} from './env/global'
 import {generateCucumberRuntimeTag} from "./support/tag-helper";
 
 
@@ -14,7 +22,10 @@ const hostsConfig: HostsConfig = getJsonFromFile(env("HOSTS_URL_PATH"))
 const pagesConfig: PagesConfig = getJsonFromFile(env("PAGE_URL_PATH"))
 const emailsConfig: EmailsConfig = getJsonFromFile(env('EMAILS_URL_PATH'))
 const errorsConfig: ErrorsConfig = getJsonFromFile(env('ERRORS_URL_PATH'))
+const mocksConfig: MocksConfig = getJsonFromFile(env('MOCKS_URLS_PATH'))
+
 const mappingFiles = fs.readdirSync(`${process.cwd()}${env("PAGE_ELEMENTS_PATH")}`)
+const payloadFiles = fs.readdirSync(`${process.cwd()}${env('MOCK_PAYLOAD_PATH')}`)
 
 
 const getEnvList = (): string[] => {
@@ -25,7 +36,7 @@ const getEnvList = (): string[] => {
     return envList
 }
 
-const pageElementMappings: PageElementMapping = mappingFiles.reduce(
+const pageElementMappings: PageElementMappings = mappingFiles.reduce(
     (pageElementConfigAcc, file) => {
         const key = file.replace('.json', '')
         const elementMappings = getJsonFromFile(`${env('PAGE_ELEMENTS_PATH')}${file}`)
@@ -33,8 +44,17 @@ const pageElementMappings: PageElementMapping = mappingFiles.reduce(
     }, {}
 )
 
+const mockPayloadMappings: MockPayloadMappings = payloadFiles.reduce(
+    (payloadConfigAcc, file) => {
+        const key = file.replace('.json', '')
+        const payloadMappings = getJsonFromFile(`${env('MOCK_PAYLOAD_PATH')}${file}`)
+        return {...payloadConfigAcc, [key]: payloadMappings }
+    },
+    {}
+)
+
 const worldParameters: GlobalConfig = {
-    hostsConfig, pagesConfig, emailsConfig, errorsConfig, pageElementMappings
+    hostsConfig, pagesConfig, emailsConfig, errorsConfig, mocksConfig, pageElementMappings, mockPayloadMappings
 }
 
 const common = `./src/features/**/*.feature \
